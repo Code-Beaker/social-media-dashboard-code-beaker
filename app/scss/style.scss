@@ -98,7 +98,7 @@ main {
 
   #{&}__item {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     background-color: m.color(light__grayish-blue-card);
     border-radius: 0.5rem;
     position: relative;
@@ -264,6 +264,65 @@ main {
 
     & img {
       width: 0.5rem;
+    }
+  }
+}
+
+// DARK THEME
+.body-dark {
+  .header {
+    background-color: m.color(neutral__very-dark-blue-bg);
+
+    .header__heading {
+      color: m.color(neutral__white);
+    }
+
+    .header__subheading {
+      color: m.color(neutral__desaturated-blue);
+    }
+  }
+
+  main {
+    background-color: m.color(neutral__very-dark-blue-top);
+  }
+
+  .overview__item {
+    background-color: m.color(neutral__dark-desaturated-blue-card);
+
+    &:hover {
+      background-color: #333a56;
+    }
+
+    .overview__item__cols-name {
+      color: m.color(neutral__desaturated-blue);
+    }
+
+    .overview__item__title {
+      color: m.color(neutral__white);
+    }
+
+    .overview__item__subtitle {
+      color: m.color(neutral__desaturated-blue);
+    }
+  }
+
+  .overview-today-heading {
+    color: m.color(neutral__white);
+  }
+
+  .overview-today__item {
+    background-color: m.color(neutral__dark-desaturated-blue-card);
+
+    &:hover {
+      background-color: #333a56;
+    }
+
+    .overview-today__item-header__name {
+      color: m.color(neutral__desaturated-blue);
+    }
+
+    .overview-today__count {
+      color: m.color(neutral__white);
     }
   }
 }
