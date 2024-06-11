@@ -1,0 +1,24 @@
+$colors: (
+  primary__lime-green: hsl(163, 72%, 41%),
+  primary__bright-red: hsl(356, 69%, 56%),
+  primary__facebook: hsl(208, 92%, 53%),
+  primary__twitter: hsl(203, 89%, 53%),
+  primary__instagram: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%)),
+  primary__youtube: hsl(348, 97%, 39%),
+  toggle__dark: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%)),
+  toggle__light: hsl(230, 22%, 74%),
+  neutral__very-dark-blue-bg: hsl(230, 17%, 14%),
+  neutral__very-dark-blue-top: hsl(232, 19%, 15%),
+  neutral__dark-desaturated-blue-card: hsl(228, 28%, 20%),
+  neutral__desaturated-blue: hsl(228, 34%, 66%),
+  neutral__white: hsl(0, 0%, 100%),
+  light__white-bg: hsl(0, 0%, 100%),
+  light__very-pale-blue-top: hsl(225, 100%, 98%),
+  light__grayish-blue-card: hsl(227, 47%, 96%),
+  light__dark-grayish-blue-text: hsl(228, 12%, 44%),
+  light__very-dark-blue-text: hsl(230, 17%, 14%),
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

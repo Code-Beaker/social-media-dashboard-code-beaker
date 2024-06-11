@@ -1,13 +1,215 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="scss/style.scss" />
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <div class="header__cols">
+        <div class="header__cols-text-content">
+          <h1 class="header__heading">social media dashboard</h1>
+          <h2 class="header__subheading">total followers: 23, 004</h2>
+        </div>
+        <button>dark theme</button>
+      </div>
+    </header>
+    <main>
+      <div class="overview">
+        <div class="overview__item facebook">
+          <div class="overview__item-cols">
+            <img
+              src="images/icon-facebook.svg"
+              class="overview__item__cols-icon"
+              alt=""
+            />
+            <p class="overview__item__cols-name">@nathanf</p>
+          </div>
+          <h3 class="overview__item__title">1987</h3>
+          <h4 class="overview__item__subtitle">followers</h4>
+          <div class="overview__item__change">
+            <img
+              class="overview__item__change-icon"
+              src="images/icon-up.svg"
+              alt=""
+            />
+            <p class="overview__item__change-text up">12 Today</p>
+          </div>
+        </div>
+        <div class="overview__item twitter">
+          <div class="overview__item-cols">
+            <img
+              src="images/icon-twitter.svg"
+              class="overview__item__cols-icon"
+              alt=""
+            />
+            <p class="overview__item__cols-name">@nathanf</p>
+          </div>
+          <h3 class="overview__item__title">1044</h3>
+          <h4 class="overview__item__subtitle">followers</h4>
+          <div class="overview__item__change">
+            <img
+              class="overview__item__change-icon"
+              src="images/icon-up.svg"
+              alt=""
+            />
+            <p class="overview__item__change-text up">99 Today</p>
+          </div>
+        </div>
+        <div class="overview__item instagram">
+          <div class="overview__item-cols">
+            <img
+              src="images/icon-instagram.svg"
+              class="overview__item__cols-icon"
+              alt=""
+            />
+            <p class="overview__item__cols-name">@realnathanf</p>
+          </div>
+          <h3 class="overview__item__title">11k</h3>
+          <h4 class="overview__item__subtitle">followers</h4>
+          <div class="overview__item__change">
+            <img
+              class="overview__item__change-icon"
+              src="images/icon-up.svg"
+              alt=""
+            />
+            <p class="overview__item__change-text up">12 Today</p>
+          </div>
+        </div>
+        <div class="overview__item youtube">
+          <div class="overview__item-cols">
+            <img
+              src="images/icon-youtube.svg"
+              class="overview__item__cols-icon"
+              alt=""
+            />
+            <p class="overview__item__cols-name">Nathan F.</p>
+          </div>
+          <h3 class="overview__item__title">8239</h3>
+          <h4 class="overview__item__subtitle">subscribers</h4>
+          <div class="overview__item__change">
+            <img
+              class="overview__item__change-icon"
+              src="images/icon-down.svg"
+              alt=""
+            />
+            <p class="overview__item__change-text down">144 Today</p>
+          </div>
+        </div>
+      </div>
+      <!-- OVERVIEW TODAY -->
+      <div class="overview-today-heading">Overview - today</div>
+      <!-- GRID -->
+      <div class="overview-today">
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Page views</h5>
+            <img src="images/icon-facebook.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">87</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-up.svg" alt="" />
+              <p class="up">3%</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Likes</h5>
+            <img src="images/icon-facebook.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">52</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-down.svg" alt="" />
+              <p class="down">2%</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Likes</h5>
+            <img src="images/icon-instagram.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">5462</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-up.svg" alt="" />
+              <p class="up">2257%</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Profile views</h5>
+            <img src="images/icon-instagram.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">52k</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-up.svg" alt="" />
+              <p class="up">1375%</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Retweets</h5>
+            <img src="images/icon-twitter.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">117</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-up.svg" alt="" />
+              <p class="up">303%</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Likes</h5>
+            <img src="images/icon-twitter.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">507</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-up.svg" alt="" />
+              <p class="up">563%</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Likes</h5>
+            <img src="images/icon-youtube.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">107</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-down.svg" alt="" />
+              <p class="down">107</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-today__item">
+          <div class="overview-today__item-header">
+            <h5 class="overview-today__item-header__name">Total views</h5>
+            <img src="images/icon-youtube.svg" alt="" />
+          </div>
+          <div class="overview-today__item-content">
+            <h5 class="overview-today__count">1407</h5>
+            <div class="overview-today__change">
+              <img src="images/icon-down.svg" alt="" />
+              <p class="down">12%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

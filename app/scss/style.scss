@@ -1,0 +1,184 @@
+@use "./modules/" as m;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  padding: 2rem 1.5rem;
+  background-color: m.color(light__very-pale-blue-top);
+
+  #{&}__cols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #{&}__heading {
+    font-size: var(--step-2);
+    color: m.color(light__very-dark-blue-text);
+    text-transform: capitalize;
+  }
+
+  #{&}__subheading {
+    font-size: var(--step--1);
+    color: m.color(light__dark-grayish-blue-text);
+    text-transform: capitalize;
+  }
+}
+
+main {
+  padding: 2rem;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  grid-auto-rows: minmax(auto, 1fr);
+  //   padding: 2rem;
+
+  @media screen and (width < 50rem) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (width < 35rem) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #{&}__item {
+    text-align: center;
+    padding: 1rem;
+    background-color: m.color(light__grayish-blue-card);
+    border-radius: 0.5rem;
+  }
+
+  #{&}__item-cols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #{&}__item-cols-name {
+    font-size: var(--step--2);
+  }
+
+  #{&}__item__title {
+    font-size: var(--step-4);
+  }
+
+  #{&}__item__subtitle {
+    font-size: var(--step--2);
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  #{&}__item__change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 1rem;
+  }
+
+  #{&}__item__change-icon {
+    width: 0.75rem;
+  }
+
+  #{&}__item__change-text {
+    font-size: var(--step--1);
+    font-weight: bold;
+  }
+}
+
+.up {
+  color: m.color(primary__lime-green);
+  font-weight: bold;
+}
+
+.down {
+  color: m.color(primary__bright-red);
+  font-weight: bold;
+}
+
+// OVERVIEW - TODAY
+.overview-today-heading {
+  font-size: var(--step-1);
+  margin-block: 1rem;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: m.color(light__dark-grayish-blue-text);
+}
+
+.overview-today {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(auto, 1fr);
+  gap: 1rem;
+
+  @media screen and (width < 50rem) {
+    & {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (width < 35rem) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #{&}__item {
+    background-color: m.color(light__grayish-blue-card);
+    border-radius: 0.25rem;
+    padding: 1rem;
+  }
+
+  #{&}__item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & img {
+      display: block;
+    }
+  }
+
+  #{&}__item-header__name {
+    text-transform: capitalize;
+    font-size: var(--step--1);
+    color: m.color(light__dark-grayish-blue-text);
+  }
+
+  #{&}__item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 2.5rem;
+  }
+
+  #{&}__count {
+    font-size: var(--step-2);
+    color: m.color(light__very-dark-blue-text);
+  }
+
+  #{&}__change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    & img {
+      width: 0.5rem;
+    }
+  }
+}
