@@ -35,6 +35,7 @@ body {
     display: flex;
     gap: 1rem;
     align-items: center;
+    text-align: center;
     justify-content: center;
 
     @media screen and (width < 50rem) {
