@@ -9,6 +9,10 @@ body {
   padding: 2rem 1.5rem;
   background-color: m.color(light__very-pale-blue-top);
 
+  @media screen and (width < 50rem) {
+    padding: 2rem 1rem;
+  }
+
   #{&}__cols {
     display: flex;
     justify-content: space-between;
@@ -29,6 +33,7 @@ body {
 
   #{&}__toggle-theme {
     display: block;
+    min-width: fit-content;
     text-transform: capitalize;
     font-weight: bold;
     background-color: m.color(toggle__light);
