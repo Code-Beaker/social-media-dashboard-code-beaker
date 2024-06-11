@@ -218,8 +218,14 @@ main {
 
   #{&}__item {
     background-color: m.color(light__grayish-blue-card);
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     padding: 1rem;
+    cursor: pointer;
+    transition: 150ms ease;
+
+    &:hover {
+      background-color: #e1e3f0;
+    }
   }
 
   #{&}__item-header {
