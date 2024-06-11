@@ -273,6 +273,29 @@ main {
   }
 }
 
+// FOOTER
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: m.color(light__very-pale-blue-top);
+
+  #{&}__text {
+    font-size: var(--step--1);
+    color: m.color(light__dark-grayish-blue-text);
+  }
+
+  #{&}__link {
+    text-decoration: underline 2px;
+    font-weight: bold;
+    color: m.color(light__very-dark-blue-text);
+    // letter-spacing: 1px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 // DARK THEME
 .body-dark {
   .header {
@@ -328,6 +351,18 @@ main {
 
     .overview-today__count {
       color: m.color(neutral__white);
+    }
+  }
+
+  .footer {
+    background-color: m.color(neutral__very-dark-blue-top);
+
+    .footer__text {
+      color: m.color(light__dark-grayish-blue-text);
+    }
+
+    .footer__link {
+      color: m.color(neutral__desaturated-blue);
     }
   }
 }
