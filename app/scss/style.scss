@@ -38,6 +38,26 @@ body {
     cursor: pointer;
     transition: 150ms ease;
     border-radius: 0.5rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      background-image: m.color(toggle__dark);
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      transition: 150ms ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
 
     &:hover {
       opacity: 0.75;
