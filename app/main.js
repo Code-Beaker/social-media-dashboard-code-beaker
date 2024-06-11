@@ -5,7 +5,7 @@ const body = document.querySelector(".body");
 const toggleButton = document.getElementById("toggleTheme");
 const toggleSwitch = document.querySelector(".header__toggle-switch");
 const nextTheme = document.getElementById("themeName");
-const modeIndicator = document.querySelector(".modeIcon");
+const modeIndicator = document.querySelector("#toggleIndicator");
 
 toggleButton.addEventListener("click", () => {
   body.classList.toggle("body-dark");
@@ -14,9 +14,11 @@ toggleButton.addEventListener("click", () => {
 
   if (body.classList.contains("body-dark")) {
     nextTheme.textContent = "Dark";
-    modeIndicator.src = "images/dark-mode.svg";
+    modeIndicator.classList.remove("bi-brightness-high");
+    modeIndicator.classList.add("bi-moon");
   } else {
     nextTheme.textContent = "Light";
-    modeIndicator.src = "images/light-mode.svg";
+    modeIndicator.classList.add("bi-brightness-high");
+    modeIndicator.classList.remove("bi-moon");
   }
 });
