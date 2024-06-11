@@ -26,6 +26,31 @@ body {
     color: m.color(light__dark-grayish-blue-text);
     text-transform: capitalize;
   }
+
+  #{&}__toggle-theme {
+    display: block;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: m.color(toggle__light);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline-offset: 0.15rem;
+    cursor: pointer;
+    transition: 150ms ease;
+    border-radius: 0.5rem;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &:active {
+      scale: 0.975;
+    }
+
+    &:focus-visible {
+      outline: 0.15rem dotted currentColor;
+    }
+  }
 }
 
 main {
@@ -58,6 +83,12 @@ main {
     border-radius: 0.5rem;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+    transition: 150ms ease;
+
+    &:hover {
+      background-color: #e1e3f0;
+    }
 
     &::before {
       content: "";
