@@ -6,10 +6,6 @@
     <title>Social Media Dashboard with Theme Switcher | Code-Beaker</title>
     <link rel="stylesheet" href="scss/style.scss" />
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="favicon_io/apple-touch-icon.png"
@@ -37,9 +33,18 @@
         </div>
         <div class="header__theme-block">
           <p><span id="themeName">Light</span> theme</p>
-          <button class="header__toggle" id="toggleTheme">
+          <button
+            class="header__toggle"
+            id="toggleTheme"
+            aria-hidden="false"
+            aria-label="toggle theme"
+          >
             <span class="header__toggle-switch">
-              <i id="toggleIndicator" class="bi bi-brightness-high"></i>
+              <img
+                class="header__toggle-indicator"
+                src="./images/light-mode.svg"
+                alt="toggle light and dark themes"
+              />
             </span>
           </button>
         </div>
