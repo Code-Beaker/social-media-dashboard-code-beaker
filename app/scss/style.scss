@@ -47,6 +47,14 @@ body {
       font-weight: 500;
     }
   }
+
+  &__theme-block--themeIndicator {
+    @media screen and (width < 50rem) {
+      & {
+        display: none;
+      }
+    }
+  }
 }
 
 .header__toggle {
